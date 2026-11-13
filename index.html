@@ -1,115 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moneycaps — Privacy Policy</title>
 <style>
-  :root {
-    color-scheme: light;
-    --ink: #1c2938;
-    --sub: #55687f;
-    --card: #ffffff;
-    --border: #dde5ee;
-    --bg: #f4f8fb;
-    --accent: #0369a1;
+  :root { --bg:#f4f0e1; --card:#ffffff; --ink:#1f2a24; --muted:#5d6a62; --line:#e2dcc8; --accent:#3f6b4f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14191a; --card:#1d2425; --ink:#eef1ee; --muted:#9aa8a0; --line:#2b3536; --accent:#8fc4a1; }
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 20px 80px;
-  }
-  h1 {
-    font-size: 28px;
-    margin: 0 0 4px;
-  }
-  .effective {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #94a3b8;
-    margin: 0 0 28px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 16px;
-  }
-  .card h2 {
-    font-size: 15px;
-    margin: 0 0 10px;
-  }
-  .card p, .card li {
-    font-size: 14px;
-    color: var(--sub);
-  }
-  .card ul {
-    margin: 0;
-    padding-left: 18px;
-  }
-  .card li + li { margin-top: 8px; }
-  .card strong { color: #334155; }
-  a { color: var(--accent); }
-  footer {
-    margin-top: 32px;
-    font-size: 12px;
-    color: #94a3b8;
-    text-align: center;
-  }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 56px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  .date { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.06em; margin:0 0 24px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:0 0 14px; }
+  h2 { font-size:17px; margin:0 0 8px; }
+  ul { margin:8px 0 0; padding-left:20px; }
+  li { margin:6px 0; }
+  p { margin:8px 0 0; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:28px; }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Moneycaps — Privacy Policy</h1>
-    <p class="effective">Effective 22 July 2026</p>
+<main>
+  <h1>Moneycaps — Privacy Policy</h1>
+  <p class="date">Effective 13 November 2026</p>
 
-    <div class="card">
-      <h2>What we collect</h2>
-      <ul>
-        <li><strong>Account info</strong> — your name, email, and phone number, stored with our backend provider (Supabase) to run your login.</li>
-        <li><strong>Financial data</strong> — transactions, accounts, budgets, goals, and notes you enter. These stay encrypted on your own device and are never uploaded to our servers.</li>
-        <li><strong>Receipt photos</strong> — encrypted and stored on your device only. If you use AI receipt scanning, the photo is sent to Google's Gemini API solely to read the amount/merchant/date off it.</li>
-        <li><strong>Subscription status</strong> — handled by RevenueCat and Apple/Google, so we never see your payment card details.</li>
-        <li><strong>Referral code</strong> — if you share or use one, we record which account referred which, to pay out affiliate rewards.</li>
-      </ul>
-    </div>
+  <section>
+    <h2>What we collect and store on our servers</h2>
+    <ul>
+      <li><strong>Account info</strong> — your name, email address and phone number, stored with our backend provider (Supabase) to run your login.</li>
+      <li><strong>Profile settings</strong> — the profile details you choose to enter or edit: preferred currency, salary day, age, monthly income, profile photo and Tax PCB settings. These are saved to your account so they follow you when you sign in again.</li>
+      <li><strong>Subscription status</strong> — handled by RevenueCat and Apple, so we never see your payment card details. RevenueCat receives your account ID and purchase status.</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h2>What we don't do</h2>
-      <ul>
-        <li>We never see or ask for your bank login, card number, or OTPs — Moneycaps is manual entry and receipt scanning only.</li>
-        <li>We don't run analytics or ad tracking, and we don't sell your data to anyone.</li>
-        <li>Moneycaps is an independent budgeting app and is not affiliated with, endorsed by, or operated by any bank.</li>
-      </ul>
-    </div>
+  <section>
+    <h2>What stays only on your device</h2>
+    <ul>
+      <li><strong>Financial records</strong> — transactions, accounts, budgets, goals, bills, claims and notes. These are encrypted on your device and are never uploaded to our servers.</li>
+      <li><strong>Receipt photos</strong> — photos you attach to a transaction or claim are encrypted and stored on your device only. They are not sent to us or to any third party.</li>
+    </ul>
+    <p>Because this data lives only on your device, it is not backed up by us. If you delete the app or lose your device, it cannot be recovered by us.</p>
+  </section>
 
-    <div class="card">
-      <h2>Security</h2>
-      <p>Your transactions and receipts are encrypted on-device (AES-256) before they're saved. Account traffic to our backend runs over HTTPS. You can also turn on Face ID/Touch ID app lock in this device's settings.</p>
-    </div>
+  <section>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We never see or ask for your bank login, card number, or OTPs — Moneycaps is manual entry only.</li>
+      <li>We don't run analytics or ad tracking, and we don't sell your data to anyone.</li>
+      <li>Moneycaps is an independent budgeting app and is not affiliated with, endorsed by, or operated by any bank.</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h2>Your rights</h2>
-      <p>You can edit your profile any time in Settings, and permanently delete your account and all associated data from Settings → Delete account. For any other request (data export, correction), contact us at <a href="mailto:support@moneycaps.app">support@moneycaps.app</a>.</p>
-    </div>
+  <section>
+    <h2>Security</h2>
+    <p>Your transactions and receipts are encrypted on-device (AES-256) before they're saved. Account traffic to our backend runs over HTTPS. You can also turn on Face ID/Touch ID app lock in this device's settings.</p>
+  </section>
 
-    <div class="card">
-      <h2>Changes to this policy</h2>
-      <p>If this policy changes, we'll update the effective date above. Continued use of the app after a change means you accept the updated policy.</p>
-    </div>
+  <section>
+    <h2>Your rights</h2>
+    <p>You can edit your profile any time in Settings, and permanently delete your account and all associated data from Settings → Delete account. For any other request (data export, correction), contact us at <a href="mailto:support@moneycaps.app">support@moneycaps.app</a>.</p>
+  </section>
 
-    <footer>&copy; 2026 Moneycaps. All rights reserved.</footer>
-  </div>
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the effective date above. Continued use of the app after a change means you accept the updated policy.</p>
+  </section>
+
+  <footer>© 2026 Moneycaps. All rights reserved.</footer>
+</main>
 </body>
 </html>
